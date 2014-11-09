@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	
+	<style> 
+
+#cl
+{
+width:120px;
+height:120px;
+position:relative;
+top:80px;
+left:100px;
+z-index:11;
+background: url(01.png) no-repeat top left;
+-webkit-background-size: 120px 120px;
+-moz-background-size: 120px 120px;
+background-size: 120px 120px;
+animation:cl 4s infinite linear;
+-webkit-animation:cl 4s infinite  linear; /* Safari and Chrome */
+}
+
+@keyframes cl
+{
+100%{transform: rotateZ(360deg);-webkit-transform: rotateZ(360deg); }
+}
+
+@-webkit-keyframes cl /* Safari and Chrome */
+{
+100%   {transform: rotateZ(360deg);-webkit-transform: rotateZ(360deg); }
+}
+
+#cloud
+{
+width:200px;
+height:300px;
+position:relative;
+z-index:10;
+background: url(2.png) no-repeat  top left;
+-webkit-background-size: 200px; 300px;
+	-moz-background-size:  200px; 300px;
+	background-size:  200px; 300px;
+animation:cloud 3s infinite linear;
+-webkit-animation:cloud 3s infinite  linear; /* Safari and Chrome */
+}
+
+@keyframes cloud
+{
+0%{ left:0}
+50%{ left:25px}
+100%{left:0}
+}
+
+@-webkit-keyframes cloud /* Safari and Chrome */
+{
+0%{ left:0}
+50%{ left:25px}
+100%{left:0}
+}
+
+</style>
+</head>
+<body>
+<img src="01.png" alt="" />
+	<div id="cl"></div>
+	<div id="cloud"></div>
+</body>
+</html>

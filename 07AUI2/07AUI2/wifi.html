@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	
+	<style> 
+
+#wifi
+{
+width:330px;
+height:249px;
+position:relative;
+top:500px;
+left:400px;
+background: url(01.png) no-repeat top left;
+animation:wifi 2s infinite linear;
+-webkit-animation:wifi 2s infinite  linear; /* Safari and Chrome */
+}
+
+@keyframes wifi
+{
+25%   {background: url(01.png) no-repeat top left;background-position: 0 0;  }
+50%  {background: url(02.png) no-repeat top left;background-position: 0 0; }
+75% {background: url(04.png) no-repeat top left;background-position: 0 0; }
+150% {background: url(04.png) no-repeat top left;background-position: 0 0; }
+}
+
+@-webkit-keyframes wifi /* Safari and Chrome */
+{
+25%   {background: url(01.png) no-repeat top left;background-position: 0 0;  }
+50%  {background: url(02.png) no-repeat top left;background-position: 0 0; }
+75% {background: url(04.png) no-repeat top left;background-position: 0 0; }
+150% {background: url(04.png) no-repeat top left;background-position: 0 0; }
+}
+
+#wave
+{
+width:150%;
+height:800px;
+position:relative;
+background: url(9.png) no-repeat top left;
+-webkit-background-size: 150% 1000px;
+-moz-background-size:  150% 1000px;
+background-size:  150% 1000px;
+background-position: -600px 0;
+animation:wave 2s infinite linear;
+-webkit-animation:wave 2s infinite linear; /* Safari and Chrome */
+}
+
+@keyframes wave
+{
+0%   {background: url(9.png) no-repeat top left;background-size:  150% 1000px;background-position: -600px 0;}
+25%   {background: url(9.png) no-repeat top left;background-size:  150% 1000px;background-position: -400px 0;}
+50%   {background: url(9.png) no-repeat top left;background-size:  150% 1000px;background-position: -200px 0;}
+75%   {background: url(9.png) no-repeat top left;background-size:  150% 1000px;background-position: -100px 0;}
+100%   {background: url(9.png) no-repeat top left;background-size:  150% 1000px;background-position: 0 0;}
+}
+
+@-webkit-keyframes wave 
+{
+0%   {background: url(9.png) no-repeat top left;background-size:  150% 1000px;background-position: -600px 0;}
+25%   {background: url(9.png) no-repeat top left;background-size:  150% 1000px;background-position: -400px 0;}
+50%   {background: url(9.png) no-repeat top left;background-size:  150% 1000px;background-position: -200px 0;}
+75%   {background: url(9.png) no-repeat top left;background-size:  150% 1000px;background-position: -100px 0;}
+100%   {background: url(9.png) no-repeat top left;background-size:  150% 1000px;background-position: 0 0;}
+
+}
+
+</style>
+</head>
+<body>
+	
+	<div id="wave"><div id="wifi"></div></div>
+</body>
+</html>
